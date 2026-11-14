@@ -11,7 +11,7 @@ from loguru import logger
 from sqlalchemy import select, func, or_
 from sqlalchemy.ext.asyncio import AsyncSession
 from openai import OpenAI
-from langchain.schema import Document
+from langchain_core.documents import Document
 
 from app.database import get_db
 from app.models import ChatRequest, ChatResponse, FavoriteFolder, FavoriteVideo, VideoCache
